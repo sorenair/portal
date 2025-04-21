@@ -1,0 +1,22 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 0.4vw;
+}
+body::-webkit-scrollbar-track {
+    background: white;
+}
+body::-webkit-scrollbar-thumb {
+    background: black;
+}
