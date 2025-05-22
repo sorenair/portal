@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CØNNECT</title>
+
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/connect.css">
+        <link rel="stylesheet" href="../css/nav_alt.css">
+        <!-- Load Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar -->
+        <div id="navbar">
+            <a href="index.html" id="home">Ø</a>
+            <nav>
+                <a href="connect.html">Connect</a>
+                <a href="help.html">Help</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+        <div id="navbar_mobile">
+            <a href="index.html" id="home">Ø</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav id="navbar_mobile_options">
+            <a href="connect.html">Connect</a>
+            <a href="help.html">Help</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div id="main">
+            <div id="hero">
+                <h1>Connect to a PØRTAL device</h1>
+            </div>
+            
+            <div id="devices">
+                <div id="origin" class="device">
+                    <p class="name">Ørigin</p>
+                    <p class="desc">First generation digital messenger</p>
+                    <img id="device_image" src="../images/portal.png">
+                    <button>+</button>
+                </div>
+                <div id="oriel" class="device">
+                    <p class="name">Øriel</p>
+                    <p class="desc">Minimalist messenger</p>
+                    <img id="device_image" src="../images/oriel.png">
+                    <button>+</button>
+                </div>
+            </div>
+
+        <script>
+            let origin = document.getElementById('origin');
+            origin.addEventListener("click", () => {
+                window.location.href = "../html/config.html";
+            });
+
+            let oriel = document.getElementById('oriel');
+            oriel.addEventListener("click", () => {
+                window.location.href = "../html/config_oriel.html";
+            });
+        </script>
+
+        <script defer src="../js/nav.js"></script>
+    </body>
+</html>

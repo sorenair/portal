@@ -1,0 +1,143 @@
+@media screen and (max-width:900px) {
+    #hero h1 {
+        font-size: 6vw;
+    }
+
+    #devices {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .device {
+        margin-top: 8vh;
+        margin-bottom: 2vh;
+        padding: 6vh 2vw 6vh 2vw;
+        border: black solid 0.4vw;
+    }
+    .device .name {
+        font-size: 8vw;
+        margin-top: 0;
+        margin-bottom: 1.5vh;
+    }
+    .device .desc {
+        font-size: 4vw;
+        margin-top: 0;
+        margin-bottom: 2vh;
+    }
+    .device button {
+        font-size: 9vw;
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+    .device img#device_image {
+        height: 25vh;
+        width: auto;
+    }
+}
+@media screen and (min-width:901px) {
+    #hero h1 {
+        font-size: 4vw;
+    }
+
+    #devices {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+    }
+
+    .device {
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+        padding: 3vh 5vw 3vh 5vw;
+        border: black solid 0.2vw;
+    }
+    .device .name {
+        font-size: 4vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .device .desc {
+        font-size: 2vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .device button {
+        font-size: 3vw;
+        margin: 0;
+    }
+    .device img#device_image {
+        height: 20vw;
+        width: auto;
+    }
+}
+
+body {
+    background-color: white;
+}
+
+#main {
+    width: 100%;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main img {
+    width: 80vw;
+    height: auto;
+}
+#hero {
+    width: 100%;
+    text-align: center;
+}
+#hero h1 {
+    color: black;
+    margin-bottom: 0;
+    position: relative;
+    font-weight: lighter;
+}
+
+.device {
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+
+    transition: all 0.3s;
+}
+.device:hover {
+    filter: drop-shadow(2px 2px 30px rgba(0, 0, 0, 0.712));
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
+.device:hover > button {
+    color: var(--accent-color);
+}
+.device .name {
+    font-weight: normal;
+    color: var(--accent-color);
+}
+.device .desc {
+    font-weight: lighter;
+    color: black;
+}
+.device button {
+    background: none;
+    padding: 0;
+    border: none;
+	color: black;
+	cursor: pointer;
+	outline: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s;
+}
