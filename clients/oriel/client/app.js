@@ -133,14 +133,14 @@ async function syncConfig() {
               const result = await response.text();
           } catch (error) {
               console.error('Error occurred:', error);
-              alert('An error occurred during submission.');
+              console.log('ERROR: No response from server.');
           }
       }
       else {
         console.log('No update required.')
       };
   } catch (error) {
-      alert('An error occurred during submission.');
+      console.log('ERROR: No response from server.');
   }
 }
 
